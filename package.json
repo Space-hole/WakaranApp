@@ -1,0 +1,19 @@
+{
+    "name": "wakaran-app",
+    "version": "0.0.1",
+    "description": "Watashimo wakaran!",
+    "main": "main.js",
+    "author": "Tarık",
+    "license": "None",
+    "devDependencies": {
+        "electron": "^22.0.0"
+    },
+    "scripts": {
+        "postinstall": "install-app-deps",
+        "dev": "electron-webpack dev --dev",
+        "compile": "electron-webpack",
+        "dist": "yarn compile && electron-builder",
+        "pack": "electron-builder --dir",
+        "start": "electron ."
+    }
+}
