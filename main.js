@@ -7,14 +7,14 @@ const path = require('path')
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    titleBarStyle: 'hidden',
     titleBarOverlay: {
-        color: '#2f3241',
+        color: '#222',
         symbolColor: '#74b1be',
-        height: 20
+        height: 20,
     },
-    width: 800,
-    height: 600,
+    autoHideMenuBar: true,
+    width: 1200,
+    height: 800,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }

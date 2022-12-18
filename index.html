@@ -1,21 +1,40 @@
-<!--index.html-->
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
-    <link rel="stylesheet" type="text/css" href="Styles/style.css">
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+<html lang="tr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+        <title>Hello World!</title>
+        <link rel="stylesheet" type="text/css" href="Styles/style.css">
+    </head>
+    <body>
+        <div class="serverList" id="serverList">
 
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
-  </body>
+        </div>
+        <div class="bottom" id="bottom">
+            <div class="channelList" id="channelList">
+
+            </div>
+            <div class="textMenu" id="textMenu">
+                <div class="textHistory" id="textWrite">
+                    
+                </div>
+                <div class="textArea" id="textArea">
+                    <div id="textInput">
+                        <form>
+                            <label for="fname">First name:</label>
+                            <input type="text" placeholder="Mesaj gönder" name="msg"><br><br>
+                        </form>
+                    </div>
+                    <div id="EmojiSet">
+                        +
+                    </div>
+                </div>
+            </div>
+            <div class="onlineMenu" id="onlineMenu">
+
+            </div>
+        </div>
+        <script src="./renderer.js"></script>
+    </body>
 </html>
