@@ -15,5 +15,8 @@
         "dist": "yarn compile && electron-builder",
         "pack": "electron-builder --dir",
         "start": "electron ."
+    },
+    "dependencies": {
+        "xhr2": "^0.2.1"
     }
 }

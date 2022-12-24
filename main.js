@@ -13,11 +13,10 @@ const createWindow = () => {
         height: 20,
     },
     autoHideMenuBar: true,
-    width: 1200,
+    width: 1600,
     height: 800,
-    webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
-    }
+    minHeight: 800,
+    minWidth:1500
   })
 
   // and load the index.html of the app.

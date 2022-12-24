@@ -4,7 +4,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
         <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-        <title>Hello World!</title>
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self' https://Wakaran-api.tarikyildiz366.repl.co/ ; " />
+        <title>Wakaran</title>
         <link rel="stylesheet" type="text/css" href="Styles/style.css">
     </head>
     <body>
@@ -23,7 +26,9 @@
                     <div id="textInput">
                         <form>
                             <label for="fname">First name:</label>
-                            <input type="text" placeholder="Mesaj gönder" name="msg"><br><br>
+                            <input type="text" placeholder="Mesaj gönder" name="msg" autocomplete="on"></input>
+                            <input id="sendMsg" class="sendMsg" type="submit" value="Gönder">
+                            <script src="sendMsg.js"></script>
                         </form>
                     </div>
                     <div id="EmojiSet">
